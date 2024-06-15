@@ -6,8 +6,9 @@
       Trainer: "Shiva"
       Duration: "128"
     tasks:
-    ansible.builtin.debug:
-    msg: "Hi iam Learning {{course}} from {{Trainer}} Duration {{Duration}}"
+    - name: Print Inforamtion
+      ansible.builtin.debug:
+        msg: "Hi,iam Learning {{course}} from {{Trainer}} Duration {{Duration}}"
 
 
 
