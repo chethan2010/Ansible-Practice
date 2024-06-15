@@ -1,11 +1,10 @@
-- name: PLAY-1
+- name: variables
   hosts: localhost
+  vars:
+    course: "Terraform"
+    Trainer: "Shiva"
+    Duration: "128"
   tasks:
-    vars:
-      course: "Terraform"
-      Trainer: "Shiva"
-      Duration: "128"
-    tasks:
     - name: Print Inforamtion
       ansible.builtin.debug:
         msg: "Hi,iam Learning {{course}} from {{Trainer}} Duration {{Duration}}"
