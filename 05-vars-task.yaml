@@ -1,8 +1,8 @@
 - name: variables at task
   hosts: localhost
   tasks:
-    - name: print msg
-      ansible.builtin.debug:
+  - name: print msg
+    ansible.builtin.debug:
       vars:
       course: "Python"
       Trainer: "James"
