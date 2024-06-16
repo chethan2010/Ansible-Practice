@@ -10,4 +10,17 @@
    tasks:
       - name: print Inforamtion
         ansible.builtin.debug:
-        msg: "Hi, My userName is {{USERNAME}} and Password is {{PASSWORD}}"
+          msg: "Hi, My userName is {{USERNAME}} and Password is {{PASSWORD}}"
+# - name: variables from prompt
+#   hosts: localhost
+#   vars_prompt:
+#   - name: USERNAME
+#     prompt: Please enter your username
+#     private: false
+#   - name: PASSWORD
+#     prompt: Please enter your password
+#     private: true
+#   tasks:
+#   - name: print information
+#     ansible.builtin.debug:
+#       msg: "Hi, Username: {{USERNAME}}. Password is: {{PASSWORD}}"        
