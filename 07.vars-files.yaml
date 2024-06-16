@@ -3,6 +3,6 @@
   vars_Files:
   - var-file
   tasks:
-    - name: Print Inforamtion
-      ansible.builtin.debug:
+  - name: Print Inforamtion
+    ansible.builtin.debug:
        msg: "Hi, welcome to {{course}} Learning from {{Trainer}} Duration is {{Duration}}"
