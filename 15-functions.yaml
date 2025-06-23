@@ -3,7 +3,7 @@
   become: yes
   vars_prompt:
   - name: number
-    promt: "Please enter number:"
+    prompt: "Please enter number:"
     private: false
   tasks:
   - name: number is less than 10
