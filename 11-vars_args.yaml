@@ -1,0 +1,6 @@
+- name: Arguements
+  hosts: localhost
+  tasks:
+  - name: variables form Arguements
+    ansible.builtin.debug:
+      msg: "Hello {{Person}},Good {{wishes}}"
