@@ -14,4 +14,4 @@
   tasks:
   - name: print info
     ansible.builtin.debug:
-      msg: "corse:{{course}} tools:{{tools}} experience:{{Experience}} realproject:{{realproject}}"
+      msg: "course:{{course}} tools:{{tools}} Experience:{{Experience}} realproject is:{{realproject}}"
