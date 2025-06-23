@@ -17,4 +17,30 @@
         
   - name: say Hello
     ansible.builtin.debug:
-      msg: "Hi hello"
+      msg: "Hi hello" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
