@@ -10,7 +10,7 @@
       Devops: 2 #key and value
       ansible: 3
       linux: 5
-      Real Project: true #Boolen
+      realproject: true #Boolen
   tasks:
   - name: print info
     ansible.builtin.debug:
