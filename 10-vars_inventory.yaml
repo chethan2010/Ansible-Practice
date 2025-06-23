@@ -3,6 +3,6 @@
   tasks:
     - name: Print Inforamtion
       ansible.builtin.debug:
-        msg: "Hi,iam Learning {{course}} from {{Trainer}} Duration {{Duration}}. Timeings are:${{Timeings}}"
+        msg: "Hi,iam Learning {{course}} from {{Trainer}} Duration {{Duration}}."
         
 
