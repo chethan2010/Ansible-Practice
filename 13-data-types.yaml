@@ -10,8 +10,9 @@
       Devops: 2 #key and value
       ansible: 3
       linux: 5
-      realproject: true #Boolen
+    realproject: true #Boolen
   tasks:
   - name: print info
     ansible.builtin.debug:
-      msg: "course is: {{course}}, tools is: {{tools}}, Experience is: {{Experience}}, realproject is: {{realproject}}"
+      msg: "course is: {{course}}, tools is: {{tools}}, Experience is: {{Experience}}, 
+          realproject is: {{realproject}}"
