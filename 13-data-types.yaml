@@ -1,0 +1,16 @@
+- name: datatypes
+  hosts: localhost
+  vars: 
+    course: Hi welcome to home
+    tools:
+    - Devops
+    - ansible
+    - Linux
+    Experience:  #map or Dictionery
+      Devops: 2 #key and value
+      ansible: 3
+      linux: 5
+      Real Project: true #Boolen
+  tasks:
+  ansible.builtin.debug:
+    msg: "corse:{{course}} tools:{{tools}} experience:{{Experience}} realproject:{{realproject}}"
