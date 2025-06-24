@@ -40,7 +40,7 @@
     my_dictval:
       course: devops
       trainer: shivakumar
-      time: 180
+      time: 180hrs
   tasks:
   - name: beforeconvert
     ansible.builtin.debug:
