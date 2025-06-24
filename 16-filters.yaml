@@ -37,16 +37,16 @@
 - name: dictvalues
   hosts: localhost
   vars: 
-    dictval:
+    my_dictval:
       course: devops
       trainer: shivakumar
       time: 180
   tasks:
   - name: beforeconvert
     ansible.builtin.debug:
-        msg: "values before: {{dictval}}"
-  - name: afterconvert
+        msg: "values before: {{my_dictval}}"
+  - name: afterconverting
     ansible.builtin.debug:
-        msg: "values after: {{dictval | dict2iteams}}"
+        msg: "values after: {{my_dictval | dict2iteams}}"
         
 
