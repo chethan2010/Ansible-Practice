@@ -1,10 +1,5 @@
 - name: demo on loop
   hosts: localhost
-  vars:
-      items:
-      - java
-      - Python
-      - web
   tasks:
   - name: print info
     ansible.builtin.debug:
