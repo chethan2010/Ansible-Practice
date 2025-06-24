@@ -2,9 +2,9 @@
   hosts: localhost
   vars:
       items:
-      - linux
-      - sheel
-      - script
+      - java
+      - Python
+      - web
   tasks:
   - name: print info
     ansible.builtin.debug:
