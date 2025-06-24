@@ -10,6 +10,6 @@
     vars: 
       Gretings: Morning"
     tasks:
-    - name : Print Info
+    - name: Print Info
       ansible.builtin.debug:
         msg: "{{Gretings | upper}}"
