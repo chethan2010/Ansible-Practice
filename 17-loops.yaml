@@ -3,8 +3,8 @@
   tasks:
   - name : toolsinfo
     ansible.builtin.debug:
-      msg:  "this are list of iteams:{{items}}"
-      loop: 
-      - linux
-      - sheel
-      - script
+      msg: "this are list of{{items}}"
+    loop: 
+    - linux
+    - sheel
+    - script
