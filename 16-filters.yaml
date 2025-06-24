@@ -37,10 +37,10 @@
 - name: dictvalues
   hosts: localhost
   vars: 
-  dictval:
-    course: devops
-    trainer: shivakumar
-    time: 180
+    dictval:
+      course: devops
+      trainer: shivakumar
+      time: 180
   tasks:
   - name: beforeconvert
     ansible.builtin.debug:
