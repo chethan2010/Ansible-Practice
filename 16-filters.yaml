@@ -34,7 +34,7 @@
         msg: "age of min:{{ages | min}}, age of max:{{ages | max}}"
 
 
-- name: dictonary values
+- name: dictvalues
   hosts: localhost
   vars: 
   dictval:
