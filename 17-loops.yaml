@@ -3,7 +3,7 @@
   tasks:
   - name: print info
     ansible.builtin.debug:
-      msg: "this are list of{{items}}"
+      msg: "Hello {{item}}"
     loop:
       - java
       - Python
