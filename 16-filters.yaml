@@ -50,3 +50,18 @@
         msg: "values after:{{ my_dictval | dict2items }}"
         
 
+- name: dictvalues
+  hosts: localhost
+  vars: 
+    my_list:
+    - {'key': 'course', 'value': 'devops'} 
+    - {'key': 'trainer', 'value': 'shivakumar'} 
+    - {'key': 'time', 'value': '180hrs'}
+
+  tasks:
+  - name: beforeconvert
+    ansible.builtin.debug:
+        msg: "values before: {{ my_list }}"
+  - name: afterconverting
+    ansible.builtin.debug:
+        msg: "values after:{{ my_list | items2dict }}"
