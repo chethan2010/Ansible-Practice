@@ -1,10 +1,13 @@
 - name: demo on loop
   hosts: localhost
+  vars:
+      items:
+      - linux
+      - sheel
+      - script
   tasks:
   - name: print info
     ansible.builtin.debug:
+    loop:
       msg: "this are list of{{items}}"
-    loop: 
-    - linux
-    - sheel
-    - script
+    
