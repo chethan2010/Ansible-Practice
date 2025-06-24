@@ -1,14 +1,3 @@
-- name: demo on loop
-  hosts: localhost
-  tasks:
-  - name: print info
-    ansible.builtin.debug:
-      msg: "Hello {{item}}"
-    loop:
-      - java
-      - Python
-      - web
-
 - name: install packages
   hosts: localhost
   tasks:
