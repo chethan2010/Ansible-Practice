@@ -10,7 +10,7 @@
     ansible.builtin.debug:
       msg: "this are list of{{items}}"
     loop:
-      - linux
-      - sheel
-      - script
+      - java
+      - Python
+      - web
 
