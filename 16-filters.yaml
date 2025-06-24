@@ -34,4 +34,19 @@
         msg: "age of min:{{ages | min}}, age of max:{{ages | max}}"
 
 
+- name: dictonary values
+  hosts: localhost
+  vars: 
+  dictval:
+    course: devops
+    trainer: shivakumar
+    time: 180
+  tasks:
+  - name: beforeconvert
+    ansible.builtin.debug:
+        msg: "values before: {{dictval}}"
+  - name: afterconvert
+    ansible.builtin.debug:
+        msg: "values after: {{dictval | dict2iteams}}"
+        
 
