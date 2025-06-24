@@ -1,7 +1,7 @@
 - name: demo on loop
   hosts: localhost
   tasks:
-  - name : print info
+  - name: print info
     ansible.builtin.debug:
       msg: "this are list of{{items}}"
     loop: 
