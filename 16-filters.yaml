@@ -44,9 +44,9 @@
   tasks:
   - name: beforeconvert
     ansible.builtin.debug:
-        msg: "values before: {{my_dictval}}"
+        msg: "values before: {{ my_dictval }}"
   - name: afterconverting
     ansible.builtin.debug:
-        msg: "values after:{{my_dictval | dict2iteams}}"
+        msg: "values after:{{ my_dictval | dict2items }}"
         
 
